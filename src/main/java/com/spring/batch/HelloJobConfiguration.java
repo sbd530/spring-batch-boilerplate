@@ -33,6 +33,8 @@ public class HelloJobConfiguration {
                 .tasklet(new Tasklet() {
                     @Override
                     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+                        contribution.getReadCount();
+                        contribution.getReadSkipCount();
                         System.out.println(" ====================== ");
                         System.out.println(" >> Hello Step1 ");
                         System.out.println(" ====================== ");
