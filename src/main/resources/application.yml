@@ -31,3 +31,5 @@ spring:
   batch:
     jdbc:
       initialize-schema: never
+      isolation-level-for-create: read_committed
+
